@@ -1,6 +1,5 @@
-package com.schacherbauer.brainluck.internal;
+package com.schacherbauer.dojo.brainluck.internal;
 
-import lombok.Getter;
 
 import java.util.Arrays;
 
@@ -12,7 +11,6 @@ public class ProgramState {
     String code;
     String input;
     StringBuilder output;
-    @Getter
     boolean finished;
 
     public ProgramState(String code, String input) {
@@ -23,6 +21,10 @@ public class ProgramState {
         this.finished = false;
         this.inputStreamPointer = 0;
         this.output = new StringBuilder();
+    }
+
+    public boolean isFinished() {
+        return finished;
     }
 
     public String getResult() {

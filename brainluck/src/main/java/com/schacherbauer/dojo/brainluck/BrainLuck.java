@@ -1,6 +1,6 @@
-package com.schacherbauer.brainluck;
+package com.schacherbauer.dojo.brainluck;
 
-import com.schacherbauer.brainluck.internal.ProgramState;
+import com.schacherbauer.dojo.brainluck.internal.ProgramState;
 
 public class BrainLuck {
     private final String code;

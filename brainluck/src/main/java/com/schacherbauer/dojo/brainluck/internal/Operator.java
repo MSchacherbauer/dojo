@@ -1,4 +1,4 @@
-package com.schacherbauer.brainluck.internal;
+package com.schacherbauer.dojo.brainluck.internal;
 
 public enum Operator {
     INCREMENT_P('>') {

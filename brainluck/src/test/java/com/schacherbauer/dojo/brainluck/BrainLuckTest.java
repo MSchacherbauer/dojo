@@ -1,6 +1,5 @@
-package com.schacherbauer;
+package com.schacherbauer.dojo.brainluck;
 
-import com.schacherbauer.brainluck.BrainLuck;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -23,5 +22,6 @@ class BrainLuckTest {
         var expected = String.valueOf((char) (input[0] * input[1]));
         assertThat(brainLuck.process(String.valueOf(input[0]) + String.valueOf(input[1]))).isEqualTo(expected);
     }
+
 
 }

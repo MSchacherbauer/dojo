@@ -1,4 +1,4 @@
-package com.schacherbauer.brainluck.internal;
+package com.schacherbauer.dojo.brainluck.internal;
 
 import java.util.stream.IntStream;
 
