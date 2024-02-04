@@ -18,7 +18,6 @@ class BrainLuckTest {
     @Test
     public void testTwoNumbersMultiplier() {
         final char[] input = {8, 9};
-
-        assertThat(new BrainLuck(",>,<[>[->+>+<<]>>[-<<+>>]<<<-]>>.").process("8,9")).isEqualTo("72");
+        assertThat(new BrainLuck(",>,<[>[->+>+<<]>>[-<<+>>]<<<-]>>.").process("89")).isEqualTo("72");
     }
 }
