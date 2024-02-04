@@ -1,5 +1,6 @@
 package com.schacherbauer;
 
+import com.schacherbauer.brainluck.BrainLuck;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -18,6 +19,9 @@ class BrainLuckTest {
     @Test
     public void testTwoNumbersMultiplier() {
         final char[] input = {8, 9};
-        assertThat(new BrainLuck(",>,<[>[->+>+<<]>>[-<<+>>]<<<-]>>.").process("89")).isEqualTo("72");
+        var brainLuck = new BrainLuck(",>,<[>[->+>+<<]>>[-<<+>>]<<<-]>>.");
+        var expected = String.valueOf((char) (input[0] * input[1]));
+        assertThat(brainLuck.process(String.valueOf(input[0]) + String.valueOf(input[1]))).isEqualTo(expected);
     }
+
 }
